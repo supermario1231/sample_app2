@@ -15,6 +15,10 @@ describe "LayoutLinks" do
    it "should have a home page at '/'" do
     get '/Home'
         response.should have_selector('title', :content => "Home")
+   end
+  it "should have a sign page '/signup'" do
+    get '/signup'
+        response.should have_selector('title', :content => "sign up")
       end
 
 
